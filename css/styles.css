@@ -86,23 +86,14 @@ header {
 /**/
 /*Section 1*/
 /**/
-#section1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 
 .section-heading {
   background: url('../img/light_greentree.png') no-repeat center center;
-  background-size: cover;
+  background-size: 75%;
   padding: 20%;
-  width: 75%;
 }
 
-#about-content {
-  width: 75%;
-}
 
 /**/
 /*Section 2*/
@@ -110,5 +101,9 @@ header {
 
 .feature {
   background-color: red;
-  height: 100px;
+  height: 200px;
+}
+
+.row {
+  margin: 10% 0;
 }
