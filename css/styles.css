@@ -19,7 +19,7 @@
 
 body {
   background-color: var(--lightgray);
-  font-size: 32px;
+  font-size: 38px;
   font-family: 'Nunito', sans-serif;
   color: var(--charcoal);
   text-align: left;
@@ -44,7 +44,7 @@ h3 {
 }
 
 section {
-  margin: 10% 0;
+  margin: 10vh 0;
 }
 
 /**/
@@ -82,6 +82,7 @@ header {
 
 /*Digital*/
 #title2 {
+  color: var(--peach);
   font-size: 200px;
 }
 
@@ -90,9 +91,21 @@ header {
   color: var(--white);
   font-size: 105px;
 }
+
+header img {
+  transition: 0.4s;
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
 /**/
 /*Section 1*/
 /**/
+
+#section1 {
+  margin-top: -7vh;
+}
 
 #section1head {
   left: 3vw;
@@ -103,6 +116,15 @@ header {
   text-align: right;
 }
 
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #section1head {
+    left: 3vw;
+    top: 93vh;
+  }
+}
+
+
+
 /**/
 /*Section 2*/
 /**/
@@ -110,6 +132,18 @@ header {
 .feature {
   background-color: var(--mediumgreen);
   height: 300px;
+  transition: 0.4s;
+}
+
+.feature h1 {
+  color: var(--lightgray);
+  font-size: 100px;
+  text-align: center;
+}
+
+.feature:hover {
+  box-shadow: 5px var(--limegreen);
+  transform: scale(1.1);
 }
 
 #section2 .row {
@@ -120,6 +154,10 @@ header {
 /*Signup form*/
 /**/
 
+#section4 {
+  margin-top: -7vh;
+}
+
 #section4head {
   left: 3vw;
   position: relative;
@@ -129,6 +167,13 @@ header {
   text-align: right;
 }
 
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #section4head {
+    left: 3vw;
+    top: 93vh;
+  }
+}
+
 #contact-form input {
 background-color: var(--lightgray);
  border: medium none;
@@ -136,14 +181,14 @@ background-color: var(--lightgray);
  border-radius: 15%;
  font-family: 'Nunito', sans-serif;
  display: block;
- margin: 5% auto;
+ margin: 2.5vh auto;
  outline: none;
  padding: 2% 0;
  text-align: center;
 }
 
 #mce-FNAME, #mce-LNAME, #mce-EMAIL {
-  width: 100%;
+  width: 90%;
 }
 
 #contact-form input:hover, #contact-form input:focus {
@@ -164,5 +209,29 @@ background-color: var(--lightgray);
 }
 /*Hover submit button style*/
 .submit-button:hover, #mc-embedded-subscribe:hover {
-  box-shadow: 2px 2px 2px var(--limegreen);
+  box-shadow: 2px 3px 3px var(--limegreen);
+}
+
+/**/
+/*Footer*/
+/**/
+footer {
+  background: url('../img/tree.png') no-repeat center center;
+  height: 40vh;
+  margin-top: 10vh;
+}
+
+footer p {
+  color: var(--lightgray);
+  font-size: 42px;
+  padding: 10vh 0;
+  text-align: center;
+}
+
+footer img {
+  transition: all 0.5s;
+}
+
+footer img:hover {
+  transform: scale(1.2);
 }
