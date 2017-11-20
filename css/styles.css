@@ -19,7 +19,7 @@
 
 body {
   background-color: var(--lightgray);
-  font-size: 16px;
+  font-size: calc(10px + 0.5vw);
   font-family: 'Nunito', sans-serif;
   color: var(--charcoal);
   text-align: left;
@@ -27,20 +27,14 @@ body {
 
 h1 {
   color: var(--peach);
-  font-size: 65px;
+  font-size: calc(55px + 0.3vw);
   font-family: 'Pathway Gothic One', sans-serif;
 }
 
 h2 {
   color: var(--charcoal);
   font-family: 'Nunito', sans-serif;
-  font-size: 25px;
-}
-
-h3 {
-  color: var(--darkgreen);
-  font-family: 'Nunito', sans-serif;
-  font-size: 25px;
+  font-size: calc(25px + 0.5vw);
 }
 
 section {
@@ -65,7 +59,7 @@ header {
   position: fixed;
   top: 5%;
   right: 5%;
-  width: 10vw;
+  width: 45px;
 }
 
 #header-text {
@@ -76,20 +70,20 @@ header {
 
 /*AGH*/
 #title1 {
-  font-size: 150px;
+  font-size: 12em;
   margin: 0 auto;
 }
 
 /*Digital*/
 #title2 {
   color: var(--peach);
-  font-size: 75px;
+  font-size: 6em;
 }
 
 /*Watch your ideas grow.*/
 #title3 {
   color: var(--white);
-  font-size: 35px;
+  font-size: 3em;
 }
 
 header img {
@@ -109,12 +103,18 @@ header img:hover {
 }
 
 #section1head {
-  left: 1vw;
+  left: -1vw;
   position: absolute;
   top: 30vh;
   transform: rotate(270deg);
   transform-origin: 0 0;
   text-align: right;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+  #section1head {
+    top: 36vh;
+  }
 }
 
 /**/
@@ -125,20 +125,22 @@ header img:hover {
   align-items: center;
   background-color: var(--mediumgreen);
   display: flex;
+  float: none;
+  height: 20vh;
   justify-content: center;
-  height: 35vh;
+  margin: 10% auto;
   transition: 0.4s;
 }
-/*
-.features {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}*/
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .feature {
+    float: left;
+}
+}
 
 .feature h1 {
   color: var(--lightgray);
-  font-size: 55px;
+  font-size: calc(35px + 0.3vw);
   text-align: center;
 }
 
@@ -169,6 +171,12 @@ header img:hover {
   text-align: right;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+  #section4head {
+    top: 50vh;
+  }
+}
+
 #contact-form input {
 background-color: var(--lightgray);
  border: medium none;
@@ -182,13 +190,15 @@ background-color: var(--lightgray);
  text-align: center;
 }
 
+.mc-field-group h2 {
+  margin-left: 5%;
+}
 #mce-FNAME, #mce-LNAME, #mce-EMAIL {
-  width: 90%;
+  width: 85%;
 }
 
 #contact-form input:hover, #contact-form input:focus {
-  border-bottom: 6px solid var(--peach);
-  border-radius: 15px;
+  border-bottom: 5px solid var(--peach);
 }
 
 /*Submit button*/
@@ -199,8 +209,9 @@ background-color: var(--lightgray);
   color: white;
   display: block;
   font-family: 'Nunito', sans-serif;
-  padding: 20px;
-  width: 50%;
+  padding: 3%;
+  text-align: left;
+  width: 45%;
 }
 /*Hover submit button style*/
 .submit-button:hover, #mc-embedded-subscribe:hover {
@@ -223,7 +234,8 @@ footer p {
 
 footer img {
   transition: all 0.5s;
-  width: 50%;
+  width: 70%;
+  max-width: 100px;
 }
 
 footer img:hover {
