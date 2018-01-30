@@ -102,21 +102,6 @@ header img:hover {
   position: relative;
 }
 
-#section1head {
-  left: -1vw;
-  position: absolute;
-  top: 30vh;
-  transform: rotate(270deg);
-  transform-origin: 0 0;
-  text-align: right;
-}
-
-@media (min-width: 768px) and (max-width: 960px) {
-  #section1head {
-    top: 36vh;
-  }
-}
-
 /**/
 /*Section 2*/
 /**/
@@ -135,7 +120,7 @@ header img:hover {
 @media (min-width: 768px) and (max-width: 960px) {
   .feature {
     float: left;
-}
+  }
 }
 
 .feature h1 {
@@ -165,7 +150,7 @@ header img:hover {
 #section4head {
   left: 1vw;
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   transform: rotate(270deg);
   transform-origin: 0 0;
   text-align: right;
