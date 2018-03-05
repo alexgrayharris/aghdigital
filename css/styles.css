@@ -19,7 +19,7 @@
 
 body {
   background-color: var(--lightgray);
-  font-size: calc(10px + 0.5vw);
+  font-size: 12px;
   font-family: 'Nunito', sans-serif;
   color: var(--charcoal);
   text-align: left;
@@ -27,18 +27,45 @@ body {
 
 h1 {
   color: var(--peach);
-  font-size: calc(55px + 0.3vw);
+  font-size: 50px;
   font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#section-head {
+  margin-left: 5%;
 }
 
 h2 {
   color: var(--charcoal);
   font-family: 'Nunito', sans-serif;
-  font-size: calc(25px + 0.5vw);
+  font-size: 25px;
 }
 
 section {
   margin: 10vh 0;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 901px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 40px;
+  }
 }
 
 /**/
@@ -59,31 +86,60 @@ header {
   position: fixed;
   top: 5%;
   right: 5%;
-  width: 45px;
+  width: 8%;
+}
+
+@media only screen and (min-width: 760px) {
+  #hamburger-icon {
+    width: 5%;
+  }
 }
 
 #header-text {
   padding-bottom: 55vh;
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 
 /*AGH*/
 #title1 {
-  font-size: 12em;
+  font-size: 150px;
   margin: 0 auto;
 }
 
 /*Digital*/
 #title2 {
   color: var(--peach);
-  font-size: 6em;
+  font-size: 75px;
 }
 
 /*Watch your ideas grow.*/
 #title3 {
   color: var(--white);
-  font-size: 3em;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 900px) {
+  #title1 {
+    font-size: 175px;
+  }
+  #title2 {
+    font-size: 75px;
+  }
+  #title3 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #title1 {
+    font-size: 225px;
+  }
+  #title2 {
+    font-size: 100px;
+  }
+  #title3 {
+    font-size: 50px;
+  }
 }
 
 header img {
@@ -93,13 +149,26 @@ header img {
 header img:hover {
     transform: scale(1.2);
 }
+
 /**/
 /*Section 1*/
 /**/
 
 #section1 {
-  margin: 10vh 0;
+  margin: 5vh 0;
   position: relative;
+}
+
+#headshot {
+  margin: 2vh 2vw;
+  width: 35%;
+}
+
+@media only screen and (min-width: 750px) {
+  #headshot {
+    float: right;
+    margin: 0 2vw;
+  }
 }
 
 /**/
@@ -109,23 +178,14 @@ header img:hover {
 .feature {
   align-items: center;
   background-color: var(--mediumgreen);
-  display: flex;
-  float: none;
   height: 20vh;
-  justify-content: center;
-  margin: 10% auto;
+  margin: 10% 0;
   transition: 0.4s;
 }
 
-@media (min-width: 768px) and (max-width: 960px) {
-  .feature {
-    float: left;
-  }
-}
-
-.feature h1 {
+.feature h2 {
   color: var(--lightgray);
-  font-size: calc(35px + 0.3vw);
+  font-family: 'Pathway Gothic One', sans-serif;
   text-align: center;
 }
 
@@ -135,7 +195,7 @@ header img:hover {
 }
 
 #section2 .row {
-  margin: 10% 0;
+  margin: 5vh 0;
 }
 
 /**/
@@ -143,23 +203,8 @@ header img:hover {
 /**/
 
 #section4 {
-  margin: 10vh 0;
+  margin: 5vh 0;
   position: relative;
-}
-
-#section4head {
-  left: 1vw;
-  position: absolute;
-  top: 35vh;
-  transform: rotate(270deg);
-  transform-origin: 0 0;
-  text-align: right;
-}
-
-@media (min-width: 768px) and (max-width: 960px) {
-  #section4head {
-    top: 50vh;
-  }
 }
 
 #contact-form input {
@@ -188,14 +233,14 @@ background-color: var(--lightgray);
 
 /*Submit button*/
 #contact-form input[type="submit"] {
-  background-color: var(--darkgreen);
+  background-color: var(--mediumgreen);
   border: 0;
   border-radius: 5px;
   color: white;
   display: block;
   font-family: 'Nunito', sans-serif;
   padding: 3%;
-  text-align: left;
+  text-align: center;
   width: 45%;
 }
 /*Hover submit button style*/
@@ -208,7 +253,7 @@ background-color: var(--lightgray);
 /**/
 footer {
   background: url('../img/tree.png') no-repeat center center;
-  height: 50vh;
+  padding: 15vh;
 }
 
 footer p {
@@ -219,7 +264,7 @@ footer p {
 
 footer img {
   transition: all 0.5s;
-  width: 70%;
+  width: 90%;
   max-width: 100px;
 }
 
