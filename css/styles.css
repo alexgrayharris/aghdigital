@@ -31,10 +31,6 @@ h1 {
   font-family: 'Pathway Gothic One', sans-serif;
 }
 
-#section-head {
-  margin-left: 5%;
-}
-
 h2 {
   color: var(--charcoal);
   font-family: 'Nunito', sans-serif;
@@ -104,6 +100,7 @@ header {
 /*AGH*/
 #title1 {
   font-size: 150px;
+  line-height: 80%;
   margin: 0 auto;
 }
 
@@ -111,12 +108,14 @@ header {
 #title2 {
   color: var(--peach);
   font-size: 75px;
+  line-height: 80%;
 }
 
 /*Watch your ideas grow.*/
 #title3 {
   color: var(--white);
   font-size: 30px;
+  line-height: 80%;
 }
 
 @media only screen and (min-width: 750px) and (max-width: 900px) {
@@ -132,7 +131,7 @@ header {
 }
 @media only screen and (min-width: 900px) {
   #title1 {
-    font-size: 225px;
+    font-size: 200px;
   }
   #title2 {
     font-size: 100px;
@@ -155,19 +154,20 @@ header img:hover {
 /**/
 
 #section1 {
-  margin: 5vh 0;
+  margin: 5%;
   position: relative;
 }
 
 #headshot {
   margin: 2vh 2vw;
-  width: 35%;
+  width: 30%;
 }
 
 @media only screen and (min-width: 750px) {
   #headshot {
     float: right;
     margin: 0 2vw;
+    width: 25%;
   }
 }
 
@@ -175,12 +175,23 @@ header img:hover {
 /*Section 2*/
 /**/
 
+#section2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .feature {
   align-items: center;
   background-color: var(--mediumgreen);
-  height: 20vh;
-  margin: 10% 0;
+  display: flex;
+  float: none;
+  height: 150px;
+  justify-content: center;
+  margin: 5%;
   transition: 0.4s;
+  width: 80%;
 }
 
 .feature h2 {
@@ -194,8 +205,14 @@ header img:hover {
   transform: scale(1.1);
 }
 
-#section2 .row {
-  margin: 5vh 0;
+@media only screen and (min-width: 750px) {
+  #section2 {
+    flex-direction: row;
+  }
+  .feature {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 /**/
@@ -203,8 +220,13 @@ header img:hover {
 /**/
 
 #section4 {
-  margin: 5vh 0;
-  position: relative;
+  margin: 5%;
+}
+
+#front-signup-form {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 #contact-form input {
@@ -256,6 +278,12 @@ footer {
   padding: 15vh;
 }
 
+#social-icons {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
 footer p {
   color: var(--lightgray);
   padding: 10vh 0;
@@ -264,7 +292,7 @@ footer p {
 
 footer img {
   transition: all 0.5s;
-  width: 90%;
+  width: 75%;
   max-width: 100px;
 }
 
