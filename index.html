@@ -13,7 +13,16 @@
 
   <body>
     <header class="parallax">
-      <img id="hamburger-icon" src="img/menu.svg">
+      <div id="main-menu">
+        <img id="hamburger-icon" src="img/menu.svg">
+        <nav id="nav">
+          <a href="#"><img class="close-icon" src="img/lnr-cross.svg"></a>
+          <div class="menu-item"><a href="#">Portfolio</a></div>
+          <div class="menu-item"><a href="#">Services</a></div>
+          <div class="menu-item"><a href="#">Blog</a></div>
+          <div class="menu-item"><a href="#">Contact Me</a></div>
+        </nav><!--#nav-->
+      </div><!--#main-menu-->
       <div id="header-text">
         <h1 id="title1">ah!</h1>
         <h2 id="title2">digital</h2>
@@ -35,16 +44,33 @@
     </section><!--#section1-->
 
     <section id="section2">
+      <h1>digital services</h2>
+      <p id="description">All services include a creative consultation, detailed documentation,
+        and training tutorials to make maintence a breeze. Clients can also
+         request an additional creative workshop, messaging, and outreach
+         strategic planning.</p>
+      <div id="services-list">
+        <div class="feature">
+          <h3>email marketing</h3>
+          <img src="img/lnr-bullhorn.svg">
+        </div><!--feature-->
          <div class="feature">
-           <h2>web design</h2>
+           <h3>web design</h3>
+           <img src="img/lnr-laptop-phone.svg">
          </div><!--feature-->
          <div class="feature">
-           <h2>online advertising</h2>
+           <h3>SEO and ads</h3>
+           <img src="img/lnr-magic-wand.svg">
          </div><!--feature-->
          <div class="feature">
-           <h2>social</h2>
+           <h3>social</h3>
+           <img src="img/lnr-bubble.svg">
          </div><!--feature-->
-
+         <div class="feature">
+           <h3>analytics</h3>
+           <img src="img/lnr-chart-bars.svg">
+         </div><!--feature-->
+      </div><!--services-list-->
     </section><!--#section2-->
 
     <section id="section3">
@@ -54,7 +80,6 @@
       <h1 id="section-head">stay in touch.</h1>
           <!-- Begin MailChimp Signup Form -->
       <div id="front-signup-form">
-      <div id="contact-form">
 
         <form action="//twitter.us16.list-manage.com/subscribe/post?u=8c6a753a2dc7be14632331e2b&amp;id=b40fa46f8c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
@@ -74,8 +99,9 @@
           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8c6a753a2dc7be14632331e2b_b40fa46f8c" tabindex="-1" value=""></div>
               <div class="clear col-xs-12"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
         </form>
-      </div><!--#signup-form-->
+      </div><!--#front-signup-form-->
     </section><!--#section4-->
 
     <footer>
@@ -87,7 +113,7 @@
           <div id="twitter-icon">
             <img src="img/Twitter.png">
           </div><!--#twitter-icon-->
-        </div><!--#social-icons-->  
+        </div><!--#social-icons-->
     </footer><!--footer-->
 
     <script
